@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Menu</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .menu-category {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .snack-category, .dinner-category {
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+         
+        }
+
+        img {
+            width: 200px;
+        }
+
+        h1 {
+    text-align: center; /* Center the text within the h1 element */
+    color: #333; /* Text color */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+}
+
+/* Style for the button container */
+div {
+    text-align: center; /* Center the buttons within the container */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+}
+
+/* Style for the buttons */
+button {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding inside the button */
+    margin: 0 10px; /* Margin between buttons */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add some border-radius for rounded corners */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Hotel Menu</h1>
+
+    <div>
+        <button class="snack">Snack Menu</button>
+        <button class="Dinner">Dinner Menu</button>
+    </div>
+
+    <div id="menu-container">
+        <div class="menu-category" id="snack-menu">
+            <div class="snack-category">
+                <img src="l1.jfif">
+                <h4>Burger</h4>
+                <p>Price: $25</p>
+            </div>
+        
+            <div class="snack-category">
+                <img src="l2.jfif">
+                <h4>Samosa</h4>
+                <p>Price: $10</p>
+            </div>
+        </div>
+        
+        <div class="menu-category" id="dinner-menu">
+            <div class="dinner-category">
+                <img src="l3.jfif">
+                <h4>Dossai</h4>
+                <p>Price: $15</p>
+            </div>
+
+            <div class="dinner-category">
+                <img src="l4.jfif">
+                <h4>Poori</h4>
+                <p>Price: $17</p>
+            </div>
+
+            <div class="dinner-category">
+                <img src="l5.jfif">
+                <h4>Idli</h4>
+                <p>Price: $17</p>
+            </div>
+        </div>
+    </div>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="Menu.js"></script>
